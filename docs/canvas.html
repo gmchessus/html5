@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Canvas</title>
+  <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+  <nav><a href="/index.html">Главная</a></nav>
+  <main>
+    <h1>Canvas — минимальный пример</h1>
+    <canvas id="c" width="300" height="100" style="border:1px solid #ccc"></canvas>
+    <script>
+      const ctx = document.getElementById('c').getContext('2d');
+      ctx.moveTo(0,0); ctx.lineTo(300,100); ctx.stroke();
+    </script>
+  </main>
+</body>
+</html>
